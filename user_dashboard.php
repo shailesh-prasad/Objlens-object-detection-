@@ -7,7 +7,6 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] != 'user') {
     header("Location: login.php");
     exit();
 }
-
 echo "<h1>Welcome User: " . $_SESSION['username'] . "</h1>";
 echo "<p>This is the user dashboard. You can view content here.</p>";
 
